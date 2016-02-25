@@ -1,0 +1,35 @@
+Snippets代码片段可以将常用的代码封装起来，通过关键字直接调用。
+
+一、创建一个新的Snippets:
+	工具栏 Tools-->new snippet
+
+二、Snippets的固定写法：
+
+<snippet>
+  <content><![CDATA[
+---
+layout: default
+title: ${1:标题}
+---
+
+${2}
+]]></content>
+  <tabTrigger>header</tabTrigger>
+  <scope>text.html.markdown</scope>
+</snippet>
+
+说明：
+	1、${1:标题}   说明第一个显示光标的位置，并且默认以‘标题’占位
+    2、${2}        按tab键光标会跳到这个位置
+    3、<scope>text.html.markdown</scope>   定义这个Snippets的作用范围
+    4、第一多个文件类型的作用范围：
+    	<scope>text.html.markdown, source.python</scope>
+	
+三、Snippets的命名规则：
+	必须以.sublime-snippet作为后缀，例如：
+		python-header.sublime-snippet
+
+
+四、Snippets的存放位置：
+	/Users/lixinxing/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+	

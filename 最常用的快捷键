@@ -1,0 +1,28 @@
+一、常用的快捷键
+
+	- Cmd-n 开一个新页面
+	- Ctrl-tab 切换页面
+	- Cmd-j 合并一行
+	- Cmd-d 选中当前单词，继续敲可以选中多个
+	- Cmd-/ 注释掉/取消注释
+	- Cmd-]/[ 缩进
+	- Cmd-L 选择当前行
+
+	- Cmd-enter/Shift-Cmd-enter 当前行之前或之后开辟一行
+	- Cmd+Z 撤销
+	- 列选择，按住 Option 键，用鼠标左键拖动。
+
+
+二、绑定自己的快捷键
+	1、Cmd + Shift + p 打开命名面板
+	2、输入 preferences:keybindings - Default（不允许修改，也不要去改） 
+	打开系统默认的快捷键设置文件，拷贝想要修改过的内容。
+	3、输入 preferences:keybindings - User 
+	打开系统默认定制快捷键设置的文件，进行修改，例如：
+		[
+ 	 		{ "keys": ["shift+tab"], "command": "reindent" , "args": { "single_line": false } },
+		]
+
+三、如何知道一个操作的精确命令
+	1、Ctrl + tab键上面的那个‘反引号’ 打开控制台
+	2、输入 sublime.log_commands(True) ，这样再次执行操作就可以看到操作的精确命令名字了

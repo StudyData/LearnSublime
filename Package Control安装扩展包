@@ -1,0 +1,25 @@
+一、查看Sublime安装了哪些包
+	1、lixinxingdeiMac:~ lixinxing$ cd /Applications/Sublime\ Text.app/
+	2、lixinxingdeiMac:Sublime Text.app lixinxing$ cd Contents/MacOS/Packages/
+	3、lixinxingdeiMac:Packages lixinxing$ ls
+	执行这三步，可以看到全部的包
+
+二、安装Package Control
+	1、打开网址
+		https://packagecontrol.io/installation
+	2、拷贝安装代码
+	3、打开工作台
+		ctrl + ~
+	4、把拷贝的代码粘贴进去
+	5、回车
+
+三、安装包
+	1、打开命令面板
+		ctrl + shift + p
+	2、输入 install package
+	3、回车
+	4、等待读取所有列表后弹出一个提示框
+	5、搜索选择要安装的包后回车
+	6、安装成功
+
+
